@@ -4,8 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Direction</title>
+    <style>
+      #auto-dir {
+        display: block;
+        margin: 0 auto;
+        outline: 0;
+        appearance: none;
+        padding: 0px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: rgb(249, 251, 250);
+        border: 1px solid rgb(137, 151, 155);
+        box-shadow: rgb(6 22 33 / 30%) 0px 1px 2px;
+        color: rgb(61, 79, 88);
+        font-size: 14px;
+        font-weight: 400;
+        height: 36px;
+        transition: all 150ms ease-in-out 0s;
+      }
+
+      #auto-dir:hover {
+        color: rgb(61, 79, 88);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(93, 108, 116);
+        box-shadow: rgb(0 0 0 / 30%) 0px 4px 4px, rgb(231 238 236) 0px 0px 0px 3px;
+      }
+    </style>
   </head>
-  <body>
+  <body style="min-width: 200px; min-height: 200px">
     <button id="auto-dir">Fix Direction</button>
     <script type="text/javascript" src="popup.js"></script>
   </body>
