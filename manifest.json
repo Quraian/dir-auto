@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Direction",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "description": "Automatically detects text and if it is written from right to left, the text will be aligned as such.",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
